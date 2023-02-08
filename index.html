@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Search</title>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <h1>Image Search</h1>
+    <form>
+      <input type="text" name="searchTxt" placeholder="Search for photos" required maxlength="100">
+      <select title="colors" name="colors" id="colors">
+        <option value="any">Any</option>
+        <option value="grayscale">Greyscale</option>
+        <option value="transparent">Transparent</option>
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+        <option value="turquoise">Turquoise</option>
+        <option value="blue">Blue</option>
+        <option value="lilac">Liliac</option>
+        <option value="pink">Pink</option>
+        <option value="white">White</option>
+        <option value="gray">Gray</option>
+        <option value="black">Black</option>
+        <option value="brown">Brown</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+    <div class="search-result">
+      <ul></ul>
+    </div>
+    <div>
+      <button type="button" id="prevBtn" disabled>Previous Page</button>
+      <button type="button" id="nextBtn" disabled>Next Page</button>
+    </div>
+  </main>
+</body>
+
+</html>
