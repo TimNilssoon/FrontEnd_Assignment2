@@ -6,15 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Search</title>
   <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <main>
+  <a class="title" href=".">
     <h1>Image Search</h1>
-    <form>
-      <input type="text" name="searchTxt" placeholder="Search for photos" required maxlength="100">
-      <select title="colors" name="colors" id="colors">
-        <option value="any">Any</option>
+  </a>
+  <main>
+    <form class="search-bar">
+      <input class="searchTxt" type="text" name="searchTxt" placeholder="Search for photos" required maxlength="100">
+      <select class="colors" title="Colors" name="colors" id="colors">
+        <option value="any">Any color</option>
         <option value="grayscale">Greyscale</option>
         <option value="transparent">Transparent</option>
         <option value="red">Red</option>
@@ -30,12 +36,12 @@
         <option value="black">Black</option>
         <option value="brown">Brown</option>
       </select>
-      <button type="submit">Search</button>
+      <button class="searchBtn" type="submit">Search</button>
     </form>
     <div class="search-result">
       <ul></ul>
     </div>
-    <div>
+    <div class="nav-buttons">
       <button type="button" id="prevBtn" disabled>Previous Page</button>
       <button type="button" id="nextBtn" disabled>Next Page</button>
     </div>
