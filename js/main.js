@@ -102,7 +102,7 @@ function createListElements(results) {
     let listItem = document.createElement('li');
 
     let image = document.createElement('img');
-    image.src = item.previewURL;
+    image.src = item.webformatURL;
     image.alt = "Image result";
 
     let tags = document.createElement('p');
