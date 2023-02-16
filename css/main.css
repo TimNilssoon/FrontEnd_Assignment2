@@ -5,10 +5,11 @@
 }
 
 body {
-  padding: 1em 5em 0 5em;
+  padding: 3em 5em 0 5em;
   background-color: black;
   background-image: url("../images/photographer.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {
