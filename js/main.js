@@ -11,6 +11,9 @@ let url;
 let currentPage = 1;
 const maxPerPage = 10;
 
+prevButton.style.display = "none";
+nextButton.style.display = "none";
+
 form.onsubmit = async event => {
   event.preventDefault();
 
@@ -31,6 +34,7 @@ form.onsubmit = async event => {
   if (results.totalHits > 0) {
     createListElements(results);
 
+    showButtons(results.totalHits);
     enableDisableButtons(results.totalHits);
   }
 }
@@ -59,6 +63,13 @@ prevButton.onclick = async event => {
 
   createListElements(results);
   enableDisableButtons(results.totalHits);
+}
+
+function showButtons(resultsCount) {
+  if (resultsCount > 0) {
+    prevButton.style.display = "inline";
+    nextButton.style.display = "inline";
+  }
 }
 
 function enableDisableButtons(resultsCount) {
