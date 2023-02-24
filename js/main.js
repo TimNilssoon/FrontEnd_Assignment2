@@ -1,4 +1,4 @@
-const apiKey = '33473762-a8ad86341928fa64fc6025f4d';
+const apiKey = '33324322-8eee52f582e68b2e31576e70f';
 
 let form = document.querySelector('form');
 let images = document.querySelector('ul');
